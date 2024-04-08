@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.main .mobile {
+  display: none;
+}
+.main .nome {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 3em;
+}
+.main .container {
+  min-height: 70vh;
+  width: 42vw;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin: -7em 1px 1px 1px;
+}
+@media screen and (max-width: 500px) {
+  .main .container {
+    min-height: 80vh;
+    width: 90vw;
+  }
+}
+.main .container .f {
+  padding: 1px 3em;
+}
+.main .container .f .resposta {
+  font-size: 16px;
+  display: none;
+  text-align: left;
+}
+.main .container .f .perguntas {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .container .f .perguntas:hover {
+  cursor: pointer;
+  color: #A34FBE;
+}
+.main .container .f .perguntas .minus {
+  display: none;
+}/*# sourceMappingURL=perguntas.module.css.map */
